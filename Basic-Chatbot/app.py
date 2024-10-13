@@ -1,12 +1,14 @@
 import nltk
 from nltk.tokenize import word_tokenize
 
-nltk.download('punkt')
+nltk.download('punkt_tab')
 
 def castle_swimmer_chatbot(user_input):
     tokens = word_tokenize(user_input.lower())  
     
-    if "castle swimmer" in tokens:
+    if "castle" in tokens:
+        return "Castle Swimmer is a webtoon that explores themes of prophecy and the fates of its characters."
+    elif "swimmer" in tokens:
         return "Castle Swimmer is a webtoon that explores themes of prophecy and the fates of its characters."
     elif "characters" in tokens:
         return "The main characters include Siren, a prince, and Kappa, the beacon of prophecy."
