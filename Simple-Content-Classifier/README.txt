@@ -1,16 +1,17 @@
-Task 3: Castle Swimmer Chatbot
+Task 1: Webtoon Content Classifier
 
 Overview:
-Developed a basic chatbot for "Castle Swimmer: Unveiling New Prophecy" that responds to user questions about the webtoon using a keyword-based approach.
+This task involved creating a simple content classifier that categorizes webtoon descriptions into genres such as romance, action, and fantasy. A small dataset of 15 webtoon descriptions was utilized to train the model.
 
 Approach:
-Keyword Matching: Created predefined responses based on specific keywords related to the webtoon.
-User Interaction: Implemented a loop to allow users to ask questions continuously until they decide to exit.
-Response Generation: The chatbot generates answers by matching user input against the defined keywords.
+Data Preparation: Collected a dataset with webtoon descriptions and their respective categories.
+Feature Extraction: Used CountVectorizer to convert text data into numerical format.
+Model Training: Implemented a logistic regression model from the scikit-learn library to classify descriptions.
+Evaluation: The model’s accuracy was calculated and displayed.
 
 Code Documentation:
-Code is documented with comments explaining the function and purpose of each part.
-The chatbot's responses are clearly defined and easily extendable for future improvements.
+The script contains comments to explain each step, from data loading to model evaluation.
+Accuracy and classification results are printed for user feedback.
 
 Usage:
-Run the script and interact with the chatbot by asking questions about the webtoon. Type "exit," "quit," or "bye" to terminate the session.
+Run the script, input a description, and receive the predicted category along with the accuracy score.
